@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title> Welcome to MentorAbroad </title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<!-- Bootstrap -->
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/bootstrap-responsive.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+
+		<!--Font-->
+		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600' rel='stylesheet' type='text/css'>
+		<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+		<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+		<!-- Fav and touch icons -->
+		<link rel="shortcut icon" href="img/favicon.png">
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+
+		<!-- SCRIPT
+		============================================================-->
+		<script src="http://code.jquery.com/jquery.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<!--google analytics tracking code-->
+		<script>
+  		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-73157121-2', 'auto');
+		ga('send', 'pageview');
+		</script>
+		<!--end of google analytics-->
+		<!--HEADER ROW-->
+		<div id="header-row">
+			<div class="container">
+				<div class="row">
+					<!--LOGO-->
+					<div class="span3 logo"><a class="brand" href="#"><img src="assets/img/logo.png"/></a></div>
+					<!-- /LOGO -->
+					<!-- MAIN NAVIGATION -->
+					<div class="span9">
+						<div class="navbar  pull-right">
+							<div class="navbar-inner">
+								<a data-target=".navbar-responsive-collapse" data-toggle="collapse" class="btn btn-navbar"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a>
+								<div class="nav-collapse collapse navbar-responsive-collapse">
+									<ul class="nav">
+										<li class="active"><a href="index.html">Home</a></li>
+										<li><a href="about.html">About</a></li>
+										<li><a href="mentors.html">Mentors</a></li>
+										<li><a href="become-a-mentor.html">Become a Mentor</a></li>
+										<li><a href="resources.html">Resources</a></li>
+										<li><a href="recruitment.html">Join</a></li>
+										<li><a href="contact.html">Contact</a></li>
+										<li>
+											<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" style="position: absolute; top: 18%;">
+											<input type="hidden" name="cmd" value="_s-xclick">
+											<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----MIIHLwYJKoZIhvcNAQcEoIIHIDCCBxwCAQExggEwMIIBLAIBADCBlDCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb20CAQAwDQYJKoZIhvcNAQEBBQAEgYCgqRtkbC9Q/cQPvUJPT1aYkzZ0GnU5X+lBlBH10y7S4VI17J7T4nuU6/bpaC5WSUcvighRe2KDWkpYP5jyUSl3JhNcoAXPQ/XTvuhMp8DOukS7VpB8f7JYwt7ol94eoqn49XKbyGd45OK+rARhuhMSLlbw6ckPmEAqfsHIS3MmAjELMAkGBSsOAwIaBQAwgawGCSqGSIb3DQEHATAUBggqhkiG9w0DBwQIJWEK60y4nfWAgYgkoYKsXNPPXalZ0Z/JmGmLijiTS3IRdCME1WzeeFGWpov3Xusm6q/7tzPrg0z8jZlpjlheluSh9CZDlx5she647+vUmWUYKEsFIL4WpB+h9IAWXYyWnhb5kjuHctkEIPgtSu3ikyao+gpJ6pjt1aq6w3L8LQ++h1QXWyPfJx9dbu2RbK7iuwqBoIIDhzCCA4MwggLsoAMCAQICAQAwDQYJKoZIhvcNAQEFBQAwgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tMB4XDTA0MDIxMzEwMTMxNVoXDTM1MDIxMzEwMTMxNVowgY4xCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJDQTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLUGF5UGFsIEluYy4xEzARBgNVBAsUCmxpdmVfY2VydHMxETAPBgNVBAMUCGxpdmVfYXBpMRwwGgYJKoZIhvcNAQkBFg1yZUBwYXlwYWwuY29tMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDBR07d/ETMS1ycjtkpkvjXZe9k+6CieLuLsPumsJ7QC1odNz3sJiCbs2wC0nLE0uLGaEtXynIgRqIddYCHx88pb5HTXv4SZeuv0Rqq4+axW9PLAAATU8w04qqjaSXgbGLP3NmohqM6bV9kZZwZLR/klDaQGo1u9uDb9lr4Yn+rBQIDAQABo4HuMIHrMB0GA1UdDgQWBBSWn3y7xm8XvVk/UtcKG+wQ1mSUazCBuwYDVR0jBIGzMIGwgBSWn3y7xm8XvVk/UtcKG+wQ1mSUa6GBlKSBkTCBjjELMAkGA1UEBhMCVVMxCzAJBgNVBAgTAkNBMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtQYXlQYWwgSW5jLjETMBEGA1UECxQKbGl2ZV9jZXJ0czERMA8GA1UEAxQIbGl2ZV9hcGkxHDAaBgkqhkiG9w0BCQEWDXJlQHBheXBhbC5jb22CAQAwDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQUFAAOBgQCBXzpWmoBa5e9fo6ujionW1hUhPkOBakTr3YCDjbYfvJEiv/2P+IobhOGJr85+XHhN0v4gUkEDI8r2/rNk1m0GA8HKddvTjyGw/XqXa+LSTlDYkqI8OwR8GEYj4efEtcRpRYBxV8KxAW93YDWzFGvruKnnLbDAF6VR5w/cCMn5hzGCAZowggGWAgEBMIGUMIGOMQswCQYDVQQGEwJVUzELMAkGA1UECBMCQ0ExFjAUBgNVBAcTDU1vdW50YWluIFZpZXcxFDASBgNVBAoTC1BheVBhbCBJbmMuMRMwEQYDVQQLFApsaXZlX2NlcnRzMREwDwYDVQQDFAhsaXZlX2FwaTEcMBoGCSqGSIb3DQEJARYNcmVAcGF5cGFsLmNvbQIBADAJBgUrDgMCGgUAoF0wGAYJKoZIhvcNAQkDMQsGCSqGSIb3DQEHATAcBgkqhkiG9w0BCQUxDxcNMTcwODI2MTk0NTI1WjAjBgkqhkiG9w0BCQQxFgQUfs32hls9uAlZVQsHpW5OqO0buGkwDQYJKoZIhvcNAQEBBQAEgYCQR2cFKvFhk5/3AePh0UCQA2ydQWw8dCSMeUYUynwdriZoadlBxW6pulC/m+JlHzkfO4gIlR0zshi3YI85sqXLoQm0CLdvlfgI4wOwtGe3/rz4PiwDAkLRBErsqj6EVgciWXLaoqHaC+xCHlGg+cWEKhHopxYGMak+MU+4JI7yxA==-----END PKCS7-----
+											">
+											<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+											<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+											</form>
+
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- MAIN NAVIGATION -->
+				</div>
+			</div>
+		</div>
+		<!-- /HEADER ROW -->
+		
+		<div class="container">
+			<!--Carousel
+			==================================================-->
+			<div id="myCarousel" class="carousel slide">
+				<div class="carousel-inner">
+					<div class="active item">
+						<div class="container">
+							<div class="row">
+								<div class="span6">
+									<div class="carousel-caption">
+										<h1>Welcome to MentorAbroad</h1>
+										<p class="lead">MentorAbroad is a peer mentorship website that connects aspiring Africans seeking to study in the US/Canada with students studying in those universities.</p>
+										<a class="btn btn-large btn-primary" href="become-a-mentor.html">Become a Mentor</a>
+									</div>
+								</div>
+								<div class="span6 disappear"> <img src="assets/slides/student.png"></div>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="container">
+							<div class="row">
+								
+								<div class="span6">
+									<div class="carousel-caption">
+										<h1>Mentors</h1>
+										<p class="lead">Select your Mentor based on the college you want or the course you intend to pursue or even the location that you would like to study.</p>
+										<a class="btn btn-large btn-primary" href="mentors.html">View Mentors</a>
+									</div>
+								</div>
+								<div class="span6"> <img src="assets/slides/worldmap.png"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Carousel nav -->
+				<a class="carousel-control left " href="#myCarousel" data-slide="prev"><i class="icon-chevron-left"></i></a>
+				<a class="carousel-control right" href="#myCarousel" data-slide="next"><i class="icon-chevron-right"></i></a>
+				<!-- /.Carousel nav -->
+			</div>
+			<!-- /Carousel -->
+			<!-- Feature
+			==============================================-->
+			<div class="row feature-box">
+				<div class="span12 cnt-title">
+					<h1>Mentors</h1>
+					<span>View College &amp; Major</span>
+				</div>
+				<!-- /.Feature -->
+				<div class="span4 mentor">
+					<img src="assets/mentors/darlington.jpg">
+					<h2>Chukwuemeka Darlington Eze</h2>
+					<p>University of California, Berkeley</p>
+					<p class="major">Economics</p>
+					<p><a href="mailto:eze.darlington@berkeley.edu">eze.darlington@berkeley.edu</a></p>
+					<a target="blank" class="profile" href="https://www.facebook.com/michael.eze.587">view profile &rarr;</a>
+				</div>
+				<div class="span4 mentor">
+					<img src="assets/mentors/akol.jpg">
+					<h2>Akol Akol</h2>
+					<p>University of California, Berkeley</p>
+					<p class="major">Civil Engineering</p>
+					<p><a href="mailto:akol@berkeley.edu">akol@berkeley.edu</a></p>
+					<a target="blank" class="profile" href="https://www.facebook.com/renox.akol">view profile &rarr;</a>
+				</div>
+				<div class="span4 mentor">
+					<img src="assets/mentors/adetutu.jpg">
+					<h2>Adetutu Sadiq</h2>
+					<p>University of California, Berkeley</p>
+					<p class="major">Public Health</p>
+					<p><a href="mailto:k.sadiq@berkeley.edu">k.sadiq@berkeley.edu</a></p>
+					<a target="blank" class="profile" href="https://www.facebook.com/profile.php?id=100008378673752">view profile &rarr;</a>
+				</div>
+			</div>
+			<!-- /.Feature -->
+			<!--  Button -->
+			<div class="row text-center row-spaced">
+				<a class="btn btn-success btn-large" href="mentors.html">View All Mentors </a>
+			</div>
+			<div class="hr-divider"></div>
+			<!-- Row View -->
+			<div class="row feature-box">
+				<h1>Advice from the Mentors</h1>
+				<br/>
+				<div class="span4">
+					<blockquote><p>"Let motivation drive you. Where hard work seems to be insufficient, genius fails."</p><p><small>Derry Lucio</small></p></blockquote>
+				</div>
+				<div class="span4">
+					<blockquote><p>"Do not go around looking for perfection, get moving, find your passion.""</p><p><small>Phenny Shantel</small></p></blockquote>
+				</div>
+				<div class="span4">
+					<blockquote><p>"Don't be afraid to ask questions. If you knew everything, you wouldn't be in college."</p><p><small>Jacqueline Antwi-Danso</small></p></blockquote>
+				</div>
+			</div>
+		</div>
+		<!-- /.Row View -->
+		<!--Footer
+		==========================-->
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="span6" style="color: #777">Copyright &copy 2016 MentorAbroad | All Rights Reserved  <br></div>
+					<div class="span6">
+					  <div class="social pull-right">
+					    <small> coming soon </small>
+					    <a href="#"><img src="assets/img/social/facebook.png" alt=""></a>
+					    <a href="#"><img src="assets/img/social/twitter.png" alt=""></a>
+					    <a href="#"><img src="assets/img/social/youtube.png" alt=""></a>
+					  </div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!--/.Footer-->
+		<script type="text/javascript">
+			 $('.carousel').carousel({
+			  interval: 5000
+			})
+		</script>
+	</body>
+</html>

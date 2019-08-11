@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <title> Welcome to MentorAbroad </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- Bootstrap -->
+      <link href="css/bootstrap.css" rel="stylesheet">
+      <link href="css/bootstrap-responsive.css" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet">
+
+      <!--Font-->
+      <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600' rel='stylesheet' type='text/css'>
+      <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+      <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <![endif]-->
+
+      <!-- Fav and touch icons -->
+      <link rel="shortcut icon" href="img/favicon.png">
+      <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+
+      <!-- SCRIPT
+      ============================================================-->
+      <script src="http://code.jquery.com/jquery.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+    </head>
+  <body>
+    <!--google analytics tracking code-->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-73157121-2', 'auto');
+    ga('send', 'pageview');
+    </script>
+    <!--end of google analytics-->
+    <!--HEADER ROW-->
+    <div id="header-row">
+      <div class="container">
+        <div class="row">
+          <!--LOGO-->
+          <div class="span3 logo"><a class="brand" href="#"><img src="assets/img/logo.png"/></a></div>
+          <!-- /LOGO -->
+          <!-- MAIN NAVIGATION -->
+          <div class="span9">
+            <div class="navbar  pull-right">
+              <div class="navbar-inner">
+                <a data-target=".navbar-responsive-collapse" data-toggle="collapse" class="btn btn-navbar"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a>
+                <div class="nav-collapse collapse navbar-responsive-collapse">
+                  <ul class="nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="active"><a href="mentors.html">Mentors</a></li>
+                    <li><a href="become-a-mentor.html">Become a Mentor</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="recruitment.html">Join</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li>
+                      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" style="position: absolute; top: 18%;">
+                      <input type="hidden" name="cmd" value="_s-xclick">
+                      <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+                      ">
+                      <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                      <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                      </form>
+
+                    </li>
+              <!--      <button type="button" onclick="location.href='http://www.mentorabroad.com/donate'" style="background: #ff6666" class="btn btn-primary navbar-btn">Donate
+                    </button> -->
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- MAIN NAVIGATION -->
+        </div>
+      </div>
+    </div>
+    <!-- /HEADER ROW -->
+    <div class="container text-center">
+      <!--PAGE TITLE-->
+      <div class="row">
+        <div class="span12">
+          <div class="page-header">
+            <h1>
+            Mentors
+            </h1>
+          </div>
+        </div>
+      </div>
+      <!-- Feature
+      ==============================================-->
+      <div class="row feature-box">
+        <div class="span4 mentor">
+          <img src="assets/mentors/victor.jpg">
+          <h2>Victor Korir</h2>
+          <p>University of California, Berkeley</p>
+          <p class="major">Electrical Engineering and Computer Sciences</p>
+          <p><a href="mailto:victor.korir@berkeley.edu">victor.korir@berkeley.edu</a></p>
+          <a target="blank" class="profile" href="http://www.victorkorir.com/">view profile &rarr;</a>
+        </div>
+        <div class="span4 mentor">
+          <img src="assets/mentors/duncan.jpg">
+          <h2>Duncan Inganji</h2>
+          <p>University of California, Berkeley</p>
+          <p class="major">Electrical Engineering and Computer Sciences</p>
+          <p><a href="mailto:duncan.inganji@berkeley.edu">duncan.inganji@berkeley.edu</a></p>
+          <a target="blank" class="profile" href="https://www.facebook.com/duncan.inganji.9">view profile &rarr;</a>
+        </div>
+        <div class="span4 mentor">
+          <img src="assets/mentors/khumalo.jpg">
+          <h2>Eric Khumalo</h2>
+          <p>University of California, Berkeley</p>
+          <p class="major">Computer Science and Physics</p>
+          <p><a href="mailto:ekhumalo@berkeley.edu">ekhumalo@berkeley.edu</a></p>
+          <a target="blank" class="profile" href="http://ekhumalo.me/">view profile &rarr;</a>
+        </div>
+      </div>
+      <!-- /.Feature -->
+      <div class="row feature-box">
+        <div class="span4 mentor">
+          <img src="assets/mentors/andre.jpg">
+          <h2>Andre Garrett</h2>
+          <p>University of California, Berkeley</p>
+          <p class="major">Math and Chemistry</p>
+          <p><a href="mailto:andre.garrett@berkeley.edu">andre.garrett@berkeley.edu</a></p>
+          <a target="blank" class="profile" href="https://www.facebook.com/alltheseburritos">view profile &rarr;</a>
+        </div>
+        <div class="span4 mentor">
+          <img src="assets/mentors/mariam.jpg">
+          <h2>Mariam Salifu</h2>
+          <p>Arizona State University </p>
+          <p class="major">Biomedical Engineering</p>
+          <p><a href="mailto:msalifu@asu.edu">msalifu@asu.edu</a></p>
+          <a target="blank" class="profile" href="https://www.facebook.com/mariam.salis">view profile &rarr;</a>
+        </div>
+        <div class="span4 mentor">
+          <img src="assets/mentors/lucio.jpg">
+          <h2>Dery M. Lucio</h2>
+          <p>Stanford University</p>
+          <p class="major">Computer Science and Physics</p>
+          <p><a href="mailto:ldery@stanford.edu">ldery@stanford.edu</a></p>
+          <a target="blank" class="profile" href="mhttps://www.facebook.com/lucio.dery">view profile &rarr;</a>
+        </div>
+      </div>
+      <!-- /.Feature -->
+      <div class="row feature-box">
+        <div class="span4 mentor">
+          <img src="assets/mentors/chala.jpg">
+          <h2>Chala Fekadu Fufa</h2>
+          <p>Stanford University</p>
+          <p class="major">Electrical Engineering and Computer Sciences</p>
+          <p><a href="mailto:cfufa@stanford.edu">cfufa@stanford.edu</a></p>
+          <a target="blank" class="profile" href="https://www.facebook.com/chala.fufa">view profile &rarr;</a>
+        </div>
+        <div class="span4 mentor">
+          <img src="assets/mentors/hamisu.jpg">
+          <h2>Ibrahim Hamisu</h2>
+          <p>University of California, Berkeley</p>
+          <p class="major">Electrical Engineering and Computer Sciences</p>
+          <p><a href="mailto:ibrahim.hamisu@berkeley.edu">ibrahim.hamisu@berkeley.edu</a></p>
+          <a target="blank" class="profile" href="https://www.facebook.com/PandemoniumOverdose">view profile &rarr;</a>
+        </div>
+        <div class="span4 mentor">
+          <img src="assets/mentors/ryan.jpg">
+          <h2>Ryan Peden</h2>
+          <p>University of California, Berkeley</p>
+          <p class="major">Applied Mathematics</p>
+          <p><a href="mailto:ryanpeden@berkeley.edu">ryanpeden@berkeley.edu</a></p>
+          <a target="blank" class="profile" href="https://www.facebook.com/ryanpeden">view profile &rarr;</a>
+        </div>
+      </div>
+      <!-- /.Feature -->
+      <div class="row feature-box">
+        <div class="span4 mentor">
+          <img src="assets/mentors/timi.jpg">
+          <h2>Timilehin Fasubaa</h2>
+          <p>University of California, Berkeley</p>
+          <p class="major">Computer Science</p>
+          <p><a href="mailto:timifasubaa@berkeley.edu">timifasubaa@berkeley.edu</a></p>
+          <a target="blank" class="profile" href="https://www.facebook.com/timilehin.fasubaa">view profile &rarr;</a>
+        </div>
+        <div class="span4 mentor">
+          <img src="assets/mentors/kena.jpg">
+          <h2>Kena Amoah</h2>
+          <p>Cornell University</p>
+          <p class="major">Biology</p>
+          <p><a href="mailto:kna29@cornell.edu">kna29@cornell.edu</a></p>
+          <a target="blank" class="profile" href="https://www.facebook.com/kena.amoah">view profile &rarr;</a>
+        </div>
+        <div class="span4 mentor">
+          <img src="assets/mentors/elizabeth.jpg">
+          <h2>Elizabeth Nderitu</h2>
+          <p>Earth University</p>
+          <p class="major">Music</p>
+          <p><a href="mailto:enderitu@earth.ac.cr">enderitu@earth.ac.cr</a></p>
+          <a target="blank" class="profile" href="https://www.facebook.com/elizabeth.muthoni.7543">view profile &rarr;</a>
+        </div>
+      </div>
+      <!-- /.Feature -->
+      <div class="row feature-box">
+        <div class="span4 mentor">
+          <img src="assets/mentors/shantel.jpg">
+          <h2>Phenny Shantel</h2>
+          <p>Earth University</p>
+          <p class="major">Arts</p>
+          <p><a href="mailto:fatumaphenny@gmail.com">fatumaphenny@gmail.com</a></p>
+          <a target="blank" class="profile" href="https://www.facebook.com/phenny.shantel">view profile &rarr;</a>
+        </div>
+        <div class="span4 mentor">
+          <img src="assets/mentors/natasha.jpg">
+          <h2>Dambudzo Mabuza</h2>
+          <p>Ashesi University </p>
+          <p class="major">Management Information Systems</p>
+          <p><a href="mailto:dambudzo.mabuza@ashesi.edu.gh">dambudzo.mabuza@ashesi.edu.gh</a></p>
+          <a target="blank" class="profile" href="https://www.facebook.com/mabuza.natty">view profile &rarr;</a>
+        </div>
+        <div class="span4 mentor">
+          <img src="assets/mentors/ollie.jpg">
+          <h2>Ollie O'Donnell</h2>
+          <p>University of California, Berkeley</p>
+          <p class="major">Computer Science</p>
+          <p><a href="mailto:oliver.o@berkeley.edu">oliver.o@berkeley.edu</a></p>
+          <a target="blank" class="profile" href="https://www.facebook.com/Oliverodaa">view profile &rarr;</a>
+        </div>
+      </div>
+      <!-- /.Feature -->
+      <div class="row feature-box">
+        <div class="span4 mentor">
+          <img src="assets/mentors/gift.jpg">
+          <h2>Gift Opar</h2>
+          <p>University of California, Berkeley</p>
+          <p class="major">Business Administration</p>
+          <p><a href="mailto:gift_opar@berkeley.edu">gift_opar@berkeley.edu</a></p>
+          <a target="blank" class="profile" href="https://www.facebook.com/gift.opar">view profile &rarr;</a>
+        </div>
+        <div class="span4 mentor">
+          <img src="assets/mentors/pascal.jpg">
+          <h2>Pascal Odek</h2>
+          <p>Stanford University</p>
+          <p class="major">Mechanical Engineering</p>
+          <p><a href="mailto:aringopascal74@gmail.com">aringopascal74@gmail.com</a></p>
+          <a target="blank" class="profile" href="http://pascalodek.com/">view profile &rarr;</a>
+        </div>
+        <div class="span4 mentor">
+          <img src="assets/mentors/david.jpg">
+          <h2>David Ndereba</h2>
+          <p>Cornell University</p>
+          <p class="major">Computer Science</p>
+          <p><a href="mailto:dmn56@cornell.edu">dmn56@cornell.edu</a></p>
+          <a target="blank" class="profile" href="https://www.facebook.com/ndereba.dave">view profile &rarr;</a>
+        </div>
+      </div>
+      <!-- /.Feature -->
+      <div class="row feature-box">
+        <div class="span4 mentor">
+          <img src="assets/mentors/james.jpg">
+          <h2>James Tayali</h2>
+          <p>University of California, Berkeley</p>
+          <p class="major">Economics</p>
+          <p><a href="mailto:jamestayali@berkeley.edu">jamestayali@berkeley.edu</a></p>
+          <a target="blank" class="profile" href="https://www.facebook.com/james.tayali">view profile &rarr;</a>
+        </div>
+        <div class="span4 mentor">
+          <img src="assets/mentors/martin.jpg">
+          <h2>Martin Nungari</h2>
+          <p>Arizona State University</p>
+          <p class="major">Electrical Engineering</p>
+          <p><a href="mailto:martin.nungari@asu.edu">martin.nungari@asu.edu</a></p>
+          <a target="blank" class="profile" href="https://www.facebook.com/martinpaul.kinyanjui1">view profile &rarr;</a>
+        </div>
+        <div class="span4 mentor">
+          <img src="assets/mentors/lilian.jpg">
+          <h2>Lilian Kabelle</h2>
+          <p>University of California, Berkeley</p>
+          <p class="major">Civil Engineering</p>
+          <p><a href="mailto:lilian-kabelle@berkeley.edu">lilian-kabelle@berkeley.edu</a></p>
+          <a target="blank" class="profile" href="https://www.facebook.com/lilyann.kabelle">view profile &rarr;</a>
+        </div>
+      </div>
+      <!-- /.Feature -->
+      <div class="row feature-box">
+        <div class="span4 mentor">
+          <img src="assets/mentors/naheel.jpg">
+          <h2>Naheel Alshafei</h2>
+          <p>University of California, Berkeley</p>
+          <p class="major">Computer Science</p>
+          <p><a href="mailto:shafeinh@berkeley.edu">shafeinh@berkeley.edu</a></p>
+          <a target="blank" class="profile" href="https://www.facebook.com/naheel.alshafei.5">view profile &rarr;</a>
+        </div>
+        <div class="span4 mentor">
+          <img src="assets/mentors/eric.jpg">
+          <h2>Eric Musyoka</h2>
+          <p>Stanford University</p>
+          <p class="major">Computer Science</p>
+          <p><a href="mailto:emusyoka@stanford.edu">emusyoka@stanford.edu</a></p>
+          <a target="blank" class="profile" href="https://www.facebook.com/eric.mutua.585">view profile &rarr;</a>
+        </div>
+        <div class="span4 mentor">
+          <img src="assets/mentors/temi.jpg">
+          <h2>Temilola Salako</h2>
+          <p>University of California, Berkeley</p>
+          <p class="major">Economics</p>
+          <p><a href="mailto:temisalako@berkeley.edu">temisalako@berkeley.edu</a></p>
+          <a target="blank" class="profile" href="https://www.facebook.com/temi.salako">view profile &rarr;</a>
+        </div>
+      </div>
+      <!-- /.Feature -->
+      <div class="row feature-box">
+        <div class="span4 mentor">
+          <img src="assets/mentors/becky.jpg">
+          <h2>Becky Mashaido</h2>
+          <p>University of California, Berkeley</p>
+          <p class="major">Applied Mathematics</p>
+          <p><a href="mailto:mashaido@berkeley.edu">mashaido@berkeley.edu</a></p>
+          <a target="blank" class="profile" href="https://www.facebook.com/shidooh">view profile &rarr;</a>
+        </div>
+        <div class="span4 mentor">
+          <img src="assets/mentors/maxwell.jpg">
+          <h2>Maxwell Jack</h2>
+          <p>University College London</p>
+          <p class="major">Mechanical Engineering</p>
+          <p><a href="mailto:maxwell.jack.13@ucl.ac.uk">maxwell.jack.13@ucl.ac.uk</a></p>
+          <a target="blank" class="profile" href="https://www.facebook.com/maxwell.jack28">view profile &rarr;</a>
+        </div>
+        <div class="span4 mentor">
+          <img src="assets/mentors/evangel.jpg">
+          <h2>Evangel Ekine</h2>
+          <p>University of Manitoba</p>
+          <p class="major">Economics</p>
+          <p><a href="mailto:ekinee@myumanitoba.ca">ekinee@myumanitoba.ca</a></p>
+          <a target="blank" class="profile" href="https://www.facebook.com/evangelblaze">view profile &rarr;</a>
+        </div>
+      </div>
+      <!-- /.Feature -->
+      <div class="row feature-box">
+        <div class="span4 mentor">
+          <img src="assets/mentors/sotonte.jpg">
+          <h2>Jack Sotonte</h2>
+          <p>Coventry University</p>
+          <p class="major">Mechanical Engineering</p>
+          <p><a href="mailto:jacks2@uni.coventry.ac.uk">jacks2@uni.coventry.ac.uk</a></p>
+          <a target="blank" class="profile" href="https://www.facebook.com/j.s.emmanuel">view profile &rarr;</a>
+        </div>
+        <div class="span4 mentor">
+          <img src="assets/mentors/patrick.jpg">
+          <h2>Patrick Zamba</h2>
+          <p>University of California, Berkeley</p>
+          <p class="major">Public Health</p>
+          <p><a href="mailto:zambapt@berkeley.edu">zambapt@berkeley.edu</a></p>
+          <a target="blank" class="profile" href="https://www.facebook.com/patrick.tee.10">view profile &rarr;</a>
+        </div>
+        <div class="span4 mentor">
+          <img src="assets/mentors/tola.jpg">
+          <h2>Tola Okesanjo</h2>
+          <p>University of Illinois Urbana-Champaign</p>
+          <p class="major">Chemical Engineering</p>
+          <p><a href="mailto:okesanj2@illinois.edu">okesanj2@illinois.edu</a></p>
+          <a target="blank" class="profile" href="https://www.facebook.com/Tolz007">view profile &rarr;</a>
+        </div>
+      </div>
+      <!-- /.Feature -->
+      <div class="row feature-box">
+        <div class="span4 mentor">
+          <img src="assets/mentors/yannick.jpg">
+          <h2>Yannick Johnson</h2>
+          <p>University of California, Berkeley</p>
+          <p class="major">Chemical Engineering</p>
+          <p><a href="mailto:yannickjohnson@berkeley.edu">yannickjohnson@berkeley.edu</a></p>
+          <a target="blank" class="profile" href="https://www.facebook.com/yannick.johnson1">view profile &rarr;</a>
+        </div>
+        <div class="span4 mentor">
+          <img src="assets/mentors/adesola.jpg">
+          <h2>Adesola Abimbola</h2>
+          <p>Howard University</p>
+          <p class="major">Computer Science</p>
+          <p><a href="mailto:adesola.abimbola@bison.howard.edu">adesola.abimbola@bison.howard.edu</a></p>
+          <a target="blank" class="profile" href="https://www.facebook.com/sola.abimbola">view profile &rarr;</a>
+        </div>
+        <div class="span4 mentor">
+          <img src="assets/mentors/linus.jpg">
+          <h2>Linus Ndambuki</h2>
+          <p>University Of Pretoria</p>
+          <p class="major">Actuarial Science</p>
+          <p><a href="mailto:itikolinus@yahoo.com">itikolinus@yahoo.com</a></p>
+          <a target="blank" class="profile" href="https://www.facebook.com/Linusndambuki">view profile &rarr;</a>
+        </div>
+      </div>
+      <!-- /.Feature -->
+      <div class="row feature-box">
+        <div class="span4 mentor">
+          <img src="assets/mentors/itago.jpg">
+          <h2>Winnie Itago</h2>
+          <p>University of California, Berkeley</p>
+          <p class="major">Economics</p>
+          <p><a href="mailto:itagokangashi@berkeley.edu">itagokangashi@berkeley.edu</a></p>
+          <a target="blank" class="profile" href="https://www.facebook.com/itago.kangashi">view profile &rarr;</a>
+        </div>
+        <div class="span4 mentor">
+          <img src="assets/mentors/abdijabar.jpg">
+          <h2>Abdijabar Mohamed</h2>
+          <p>Middlebury College</p>
+          <p class="major">Engineering and Economics</p>
+          <p><a href="mailto:aymohamed@middlebury.edu">aymohamed@middlebury.edu</a></p>
+          <a target="blank" class="profile" href="https://www.facebook.com/abdyjey.mohamerz">view profile &rarr;</a>
+        </div>
+        <div class="span4 mentor">
+          <img src="assets/mentors/grace.jpg">
+          <h2>Grace Adesina</h2>
+          <p>Fisk University</p>
+          <p class="major">Financial Economics, Creative Writing, Accounting</p>
+          <p><a href="mailto:grace.adeshina@my.fisk.edu">grace.adeshina@my.fisk.edu</a></p>
+          <a target="blank" class="profile" href="https://www.facebook.com/ghrayce1">view profile &rarr;</a>
+        </div>
+      </div>
+      <!-- /.Feature -->
+      <div class="row feature-box">
+        <div class="span4 mentor">
+          <img src="assets/mentors/alicia.jpg">
+          <h2>Alicia Lau</h2>
+          <p>University of California, Berkeley</p>
+          <p class="major">Business Administration</p>
+          <p><a href="mailto:aliciaglau@berkeley.edu">aliciaglau@berkeley.edu</a></p>
+          <a target="blank" class="profile" href="https://www.facebook.com/alicia.lau.79">view profile &rarr;</a>
+        </div>
+        <div class="span4 mentor">
+          <img src="assets/mentors/kipkoech.jpg">
+          <h2>Linus Kipkoech</h2>
+          <p>University of California, Berkeley</p>
+          <p class="major">Electrical Engineering and Computer Sciences</p>
+          <p><a href="mailto:kipkoechlinuss@berkeley.edu">kipkoechlinuss@berkeley.edu</a></p>
+          <a target="blank" class="profile" href="https://www.facebook.com/linus.kipkoech.1">view profile &rarr;</a>
+        </div>
+        <div class="span4 mentor">
+          <img src="assets/mentors/wyckliffe.jpg">
+          <h2>Madunda Wyckliffe</h2>
+          <p>University of California, Berkeley</p>
+          <p class="major">Chemical Engineering</p>
+          <p><a href="mailto:wycliffe.madunda@berkeley.edu">wycliffe.madunda@berkeley.edu</a></p>
+          <a target="blank" class="profile" href="https://www.facebook.com/madunda.wycklife">view profile &rarr;</a>
+        </div>
+      </div>
+      <!-- /.Feature -->
+      <div class="row feature-box">
+        <div class="span4 mentor">
+          <img src="assets/mentors/kevin.jpg">
+          <h2>Kevin Sianzwi</h2>
+          <p>University of California, Berkeley</p>
+          <p class="major">Electrical Engineering and Computer Sciences</p>
+          <p><a href="mailto:sianzwi.12893@berkeley.edu">sianzwi.12893@berkeley.edu</a></p>
+          <a target="blank" class="profile" href="https://www.facebook.com/profile.php?id=100003901366513">view profile &rarr;</a>
+        </div>
+        <div class="span4 mentor">
+          <img src="assets/mentors/kwaku.jpg">
+          <h2>Kwaku Quansah</h2>
+          <p>University of Pennsylvania</p>
+          <p class="major">Neuroscience and Economics</p>
+          <p><a href="mailto:quansahk@wharton.upenn.edu">quansahk@wharton.upenn.edu</a></p>
+          <a target="blank" class="profile" href="https://www.facebook.com/kwaku.quansah.3">view profile &rarr;</a>
+        </div>
+        <div class="span4 mentor">
+          <img src="assets/mentors/prosper.jpg">
+          <h2>Prosper Amie</h2>
+          <p>University of California, Berkeley</p>
+          <p class="major">Electrical Engineering and Computer Sciences</p>
+          <p><a href="mailto:prosperamie@berkeley.edu">prosperamie@berkeley.edu</a></p>
+          <a target="blank" class="profile" href="https://www.facebook.com/prosper.amie">view profile &rarr;</a>
+        </div>
+      </div>
+      <!-- /.Feature -->
+      <div class="row feature-box">
+        <div class="span4 mentor">
+          <img src="assets/mentors/darlington.jpg">
+          <h2>Chukwuemeka Darlington Eze</h2>
+          <p>University of California, Berkeley</p>
+          <p class="major">Economics</p>
+          <p><a href="mailto:eze.darlington@berkeley.edu">eze.darlington@berkeley.edu</a></p>
+          <a target="blank" class="profile" href="https://www.facebook.com/michael.eze.587">view profile &rarr;</a>
+        </div>
+        <div class="span4 mentor">
+          <img src="assets/mentors/akol.jpg">
+          <h2>Akol Akol</h2>
+          <p>University of California, Berkeley</p>
+          <p class="major">Civil Engineering</p>
+          <p><a href="mailto:akol@berkeley.edu">akol@berkeley.edu</a></p>
+          <a target="blank" class="profile" href="https://www.facebook.com/renox.akol">view profile &rarr;</a>
+        </div>
+        <div class="span4 mentor">
+          <img src="assets/mentors/adetutu.jpg">
+          <h2>Adetutu Sadiq</h2>
+          <p>University of California, Berkeley</p>
+          <p class="major">Public Health</p>
+          <p><a href="mailto:k.sadiq@berkeley.edu">k.sadiq@berkeley.edu</a></p>
+          <a target="blank" class="profile" href="https://www.facebook.com/profile.php?id=100008378673752">view profile &rarr;</a>
+        </div>
+      </div>
+      <!-- /.Feature -->
+      <div class="row feature-box">
+        <div class="span4 mentor">
+          <img src="assets/mentors/vicentia.jpg">
+          <h2>Vicentia Adubea Gyau</h2>
+          <p>University of California, Berkeley</p>
+          <p class="major">Business Adminstration</p>
+          <p><a href="mailto:vicentia.gyau@berkeley.edu">vicentia.gyau@berkeley.edu</a></p>
+          <a target="blank" class="profile" href="https://www.facebook.com/vicentia.adubeagyau">view profile &rarr;</a>
+        </div>
+        <div class="span4 mentor">
+          <img src="assets/mentors/daniel.jpg">
+          <h2>Daniel Phiri</h2>
+          <p>University of California, Berkeley</p>
+          <p class="major">Electrical Engineering and Computer Sciences</p>
+          <p><a href="mailto:danielphiri@berkeley.edu">danielphiri@berkeley.edu</a></p>
+          <a target="blank" class="profile" href="http://www.facebook.com/danielphiriforreal">view profile &rarr;</a>
+        </div>
+        <div class="span4 mentor">
+          <img src="assets/mentors/jacqueline.jpg">
+          <h2>Jacqueline Antwi-Danso</h2>
+          <p>Texas Christian University</p>
+          <p class="major">Biology, Physics and Astronomy</p>
+          <p><a href="mailto:j.a.danso@tcu.edu">j.a.danso@tcu.edu</a></p>
+          <a target="blank" class="profile" href="hhttps://www.facebook.com/jacqueline.antwidanso">view profile &rarr;</a>
+        </div>
+      </div>
+      <!-- /.Feature -->
+      <div class="row feature-box">
+        <div class="span4 mentor">
+          <img src="assets/mentors/sam.jpg">
+          <h2>Samuel Karani</h2>
+          <p>University of California, Berkeley</p>
+          <p class="major">Computer Science</p>
+          <p><a href="mailto:samuel.karani@berkeley.edu">samuel.karani@berkeley.edu</a></p>
+          <a target="blank" class="profile" href="https://www.facebook.com/samuel.karani">view profile &rarr;</a>
+        </div>
+        <div class="span4 mentor">
+          <img src="assets/mentors/sulaiman.jpg">
+          <h2>Sulaiman Haruna</h2>
+          <p>University of California, Berkeley</p>
+          <p class="major">Electrical Engineering and Computer Sciences</p>
+          <p><a href="mailto:sharuna@berkeley.edu">sharuna@berkeley.edu</a></p>
+          <a target="blank" target="blank" class="profile" href="https://www.facebook.com/Thesulaiman93">view profile &rarr;</a>
+        </div>
+        <div class="span4 mentor">
+          <img src="assets/mentors/soji.jpg">
+          <h2>Soji Adeshina</h2>
+          <p>University of California, Berkeley</p>
+          <p class="major">Electrical Engineering and Computer Sciences</p>
+          <p><a href="mailto:adeshina@berkeley.edu">adeshina@berkeley.edu</a></p>
+          <a target="blank" class="profile" href="https://www.facebook.com/adesoji.adeshina">view profile &rarr;</a>
+        </div>
+      </div>
+      <!-- /.Feature -->
+      <div class="row feature-box">
+        <div class="span4 mentor">
+          <img src="assets/mentors/audrey.jpg">
+          <h2>Audrey Koti</h2>
+          <p>University of California, Berkeley</p>
+          <p class="major">Molecular and Cell Biology and Economics</p>
+          <p><a href="mailto:akoti@berkeley.edu">akoti@berkeley.edu</a></p>
+          <a target="blank" class="profile" href="https://www.facebook.com/audrey.cotty">view profile &rarr;</a>
+        </div>
+        <div class="span4 mentor">
+          <img src="assets/mentors/alsanosi.jpg">
+          <h2>Alsanosi Adam</h2>
+          <p>University of California, Berkeley</p>
+          <p class="major">Journalism</p>
+          <p><a href="mailto:sanosi.osman@berkeley.edu">sanosi.osman@berkeley.edu</a></p>
+          <a target="blank" class="profile" href="https://www.facebook.com/alsanosi">view profile &rarr;</a>
+        </div>
+        <div class="span4 mentor">
+          <img src="assets/mentors/maigua.jpg">
+          <h2>Eric Maigua</h2>
+          <p>Minerva Schools at KGI</p>
+          <p class="major">Economics</p>
+          <p><a href="mailto:muraya@minerva.kgi.edu">muraya@minerva.kgi.edu</a></p>
+          <a target="blank" class="profile" href="https://www.facebook.com/erique.mcwayne?fref=ts">view profile &rarr;</a>
+        </div>
+      </div>
+      <!-- /.Feature -->
+      <div class="row feature-box">
+        <div class="span4 mentor">
+          <img src="assets/mentors/sandra.jpg">
+          <h2>Sandra Murila</h2>
+          <p>Strathmore University</p>
+          <p class="major">Accounting</p>
+          <p><a href="mailto:sandra.murila@strathmore.edu">sandra.murila@strathmore.edu</a></p>
+          <a target="blank" class="profile" href="https://www.facebook.com/sandra.murila">view profile &rarr;</a>
+        </div>
+        <div class="span4 mentor">
+          <img src="assets/img/male-avatar.png">
+          <h2>Gideon Cheruiyot</h2>
+          <p>Columbia University</p>
+          <p class="major">Computer Science and Architecture</p>
+          <p><a href="mailto:gkc2112@columbia.edu">gkc2112@columbia.edu</a></p>
+          <a target="blank" target="blank" class="profile" href="#">view profile &rarr;</a>
+        </div>
+
+        <div class="span4 mentor">
+          <img src="assets/mentors/diana.jpg">
+          <h2>Diana Quelhas</h2>
+          <p>University of California, Berkeley</p>
+          <p class="major">Public Health, Epidemiology</p>
+          <p><a href="diana.quelhas@berkeley.edu">diana.quelhas@berkeley.edu</a></p>
+          <a target="blank" target="blank" class="profile" href="https://www.facebook.com/diana.quelhas">view profile &rarr;</a>
+        </div>
+      </div>
+      <!-- /.Feature -->
+      <div class="row feature-box">
+        <div class="span4 mentor">
+          <img src="assets/mentors/ruben.jpg">
+          <h2>Ruben</h2>
+          <p>University of California, Berkeley</p>
+          <p class="major">Development Studies</p>
+          <p><a href="mailto:ruben.cohenaknine@berkeley.edu">ruben.cohenaknine@berkeley.edu</a></p>
+          <a target="blank" class="profile" href="https://www.facebook.com/ruben.cohenaknine">view profile &rarr;</a>
+        </div>
+        <div class="span4 mentor">
+          <img src="assets/mentors/marsalis.jpg">
+          <h2>Marsalis Gibson</h2>
+          <p>University of California, Berkeley</p>
+          <p class="major">Electrical Engineering and Computer Science</p>
+          <p><a href="mailto:marsalistgibson@gmail.com">marsalistgibson@gmail.com</a></p>
+          <a target="blank" target="blank" class="profile" href="https://www.facebook.com/marsalis.gibson">view profile &rarr;</a>
+        </div>
+        <div class="span4 mentor">
+          <img src="assets/mentors/fiona.jpg">
+          <h2>Leona Tariro Muchenje</h2>
+          <p>University of California, Berkeley</p>
+          <p class="major">Economics, Global Studies</p>
+          <p><a href="mailto:lmuchenje@berkeley.edu">lmuchenje@berkeley.edu</a></p>
+          <a target="blank" target="blank" class="profile" href="https://www.facebook.com/liona.muchenje">view profile &rarr;</a>
+        </div>
+      </div>
+      <div class="row feature-box">
+        <div class="span4 mentor">
+          <img src="assets/mentors/precious.jpg">
+          <h2>Precious Daka</h2>
+          <p>University of California, Berkeley</p>
+          <p class="major">Mathematics and Public Policy</p>
+          <p><a href="mailto:preciouspelina@gmail.com">preciouspelina@gmail.com</a></p>
+          <a target="blank" class="profile" href="https://www.facebook.com/precious.daka.31">view profile &rarr;</a>
+        </div>
+        <div class="span4 mentor">
+          <img src="assets/mentors/eugine.jpg">
+          <h2>Eugene Ablordeppey</h2>
+          <p>Arizona State  University</p>
+          <p class="major">Biomedical Engineering</p>
+          <p><a href="mailto:eyramablord@gmail.com">eyramablord@gmail.com</a></p>
+          <a target="blank" target="blank" class="profile" href="https://www.facebook.com/eyramablord
+">view profile &rarr;</a>
+        </div>
+      </div>
+      <!-- /.Feature -->
+    </div>
+    <!--Footer
+    ==========================-->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="span6" style="color: #777">Copyright &copy 2016 MentorAbroad | All Rights Reserved  <br></div>
+          <div class="span6">
+            <div class="social pull-right">
+              <small> coming soon </small>
+              <a href="#"><img src="assets/img/social/facebook.png" alt=""></a>
+              <a href="#"><img src="assets/img/social/twitter.png" alt=""></a>
+              <a href="#"><img src="assets/img/social/youtube.png" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--/.Footer-->
+  </body>
+</html>

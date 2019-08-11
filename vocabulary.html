@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title> Welcome to MentorAbroad </title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<!-- Bootstrap -->
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/bootstrap-responsive.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+
+		<!--Font-->
+		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600' rel='stylesheet' type='text/css'>
+		<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+		<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+		<!-- Fav and touch icons -->
+		<link rel="shortcut icon" href="img/favicon.png">
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+
+		<!-- SCRIPT
+		============================================================-->
+		<script src="http://code.jquery.com/jquery.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<!--google analytics tracking code-->
+		<script>
+  		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-73157121-2', 'auto');
+		ga('send', 'pageview');
+		</script>
+		<!--end of google analytics-->
+		<div id="header-row">
+			<div class="container">
+				<div class="row">
+					<!--LOGO-->
+					<div class="span3 logo"><a class="brand" href="#"><img src="assets/img/logo.png"/></a></div>
+					<!-- /LOGO -->
+					<!-- MAIN NAVIGATION -->
+					<div class="span9">
+						<div class="navbar  pull-right">
+							<div class="navbar-inner">
+								<a data-target=".navbar-responsive-collapse" data-toggle="collapse" class="btn btn-navbar"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a>
+								<div class="nav-collapse collapse navbar-responsive-collapse">
+									<ul class="nav">
+										<li><a href="index.html">Home</a></li>
+										<li><a href="about.html">About</a></li>
+										<li><a href="mentors.html">Mentors</a></li>
+										<li><a href="become-a-mentor.html">Become a Mentor</a></li>
+										<li class="active"><a href="resources.html">Resources</a></li>
+										<li><a href="recruitment.html">Join</a></li>
+										<li><a href="contact.html">Contact</a></li>
+										<li>
+											<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" style="position: absolute; top: 18%;">
+											<input type="hidden" name="cmd" value="_s-xclick">
+											<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+											">
+											<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+											<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+											</form>
+
+										</li>
+							<!-- 			<button type="button" onclick="location.href='http://www.mentorabroad.com/donate'" style="background: #ff6666" class="btn btn-primary navbar-btn">Donate
+										</button> -->
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- MAIN NAVIGATION -->
+				</div>
+			</div>
+		</div>
+		<!-- /HEADER ROW -->
+		<div class="container">
+			<!--PAGE TITLE-->
+			<div class="row">
+				<div class="span12">
+					<div class="page-header">
+						<h1>
+						Vocabulary
+						</h1>
+					</div>
+				</div>
+			</div>
+			<!-- /. PAGE TITLE-->
+
+		<div class="row">
+				<div class="span12">
+					<h2><a name="mission">Types of Post-Secondary Institutions</a></h2>
+						<h3>College</h3>
+							<p>
+								An institution of higher learning, often referred to as a “four year” institution, which grants the bachelor's degree in liberal arts or science or both.
+							</p>
+						<h3>University</h3>
+							<p>
+								A school that includes many different schools—such as a college of chemistry and a college of business—and that has graduate students. Please note: The term “college” is generally used to refer to a university as well in the American context. We too, use it too interchangeably with college.
+							</p>
+						<h3>Institute of Technology</h3>
+							<p>
+								A school that specializes in subjects such as engineering, physics, chemistry, and math.
+							</p>
+						<h3>Liberal Arts College</h3>
+							<p>
+								A college where students are free to study a wide variety of different subjects during their undergraduate years
+							</p>
+					<h2><a name="mission">College Admission Tests</a></h2>
+						<h3>ACT</h3>
+							<p>
+								A two hour and 55 minute examination that measures a student’s knowledge and achievement in four subject areas—English, mathematics, reading and science reasoning— to determine the student’s readiness for college-level instruction. There is also an optional writing test that assesses students’ skills in writing an essay. The ACT is scored on a scale of 1 to 36 for each of the four areas.The four subject area scores are averaged to create a Composite Score.
+							</p>
+						<h3>Advanced Placement (AP)</h3>
+							<p>
+								AP courses are college-level classes taught in the high school.
+							</p>
+						<h3>SAT</h3>
+							<p>
+								This is a widely used college entrance examination program. This includes the SAT Reasoning Test, which assesses students’ critical thinking skills as they relate to the ability to manage college-level instruction. It is a 3-hour exam measuring verbal and mathematical skills, as well as grammar/conventions and the ability to write a brief essay. Students may earn a total of up to 2400 points on the three-hour exam (up to 800 points in each of the exam’s content areas: verbal, math, and writing).
+							</p>
+						<h3>SAT Subject Test</h3>
+							<p>
+								SAT subject tests (also known as SAT II tests) are offered in many areas of study including English, mathematics, many sciences, history, and foreign languages. Some colleges require students to take one or more SAT subject tests when they apply for admission.
+							</p>
+					<h2><a name="mission">College Application Vocabulary</a></h2>
+						<h3>Application</h3>
+							<p>
+								Admissions departments usually require students to complete an application for admission that generally consists of academic records, personal essays, letters of recommendation, and a list of extracurricular activities. Most schools require the SAT or ACT. Deadlines for admission applications are established and published by each college or university.
+							</p>
+						<h3>College Essay</h3>
+							<p>
+								A brief composition on a single subject, required by many colleges as part of the application process for admission.
+							</p>
+						<h3>Common Application</h3>
+							<p>
+								The Common Application (informally known as the Common App) makes it possible for students to use one admissions application to apply to any of 456 member colleges and universities. There is a Common Application for First-Year Admission and a Common Application for Transfer Admission. Both versions allow the application to be filled out once online and submitted to all schools with the same information going to each.
+							</p>
+						<h3>Early Action</h3>
+							<p>
+								Early action is when a prospective student applies for admission by early deadline (before the regular admission deadline) and receives notice of acceptance, denial, or deferment with no obligation to the university to enroll, if accepted for admission.
+							</p>
+						<h3>Early Decision</h3>
+							<p>
+								Through this program offered by many post-secondary institutions, students willing to commit to a school if accepted submit their application by a date well before the general admission deadline. If accepted, the student must enroll in that school, so students should only apply early decision to their first choice school.
+							</p>
+						<h3>Need-Blind Admission</h3>
+							<p>
+								Full consideration of an applicant and his or her application without regard to the individual’s need for financial aid.
+							</p>
+						<h3>Recommendations/Letters of Evaluation</h3>
+							<p>
+								Statements or letters of endorsement written on a student’s behalf during the college application process.
+							</p>
+						<h3>Transcript</h3>
+							<p>
+								This is the official document containing the record of a student’s academic performance and testing history. The school at which a student is or has been officially enrolled must issue the transcript, certified by the signature of an authorized school administrator. The school’s official seal or watermarked school stationery may also be used to authenticate the transcript.
+
+							</p>
+						<h3>Wait-­list</h3>
+							<p>
+								An applicant is put on the wait-­‐list when an admissions officer or committee decides to offer the applicant the opportunity to enroll in the institution only if there is space available inthe incoming class after fully admitted students have responded to their offers to enroll. This category of admissions is reserved for students whose profiles are strong, but who are marginally qualified in comparison to the overall strength of others in the pool of applicants.
+
+							</p>
+					<h2><a name="mission">College Search Vocabulary</a></h2>
+						<h3>“Best Fit”</h3>
+							<p>
+								The college search is not about getting into the best college. There is no school that is best for all students. Some students do best at large public universities; some do best in small liberal arts colleges; still others want to study far from home. Students should look beyond the big name schools or the ones friends are excited about and do their own research.
+							</p>
+						<h3>“Reach School”</h3>
+							<p>
+								A college or university that you have a chance of getting into, but your test scores, GPA and/or class rank are a bit on the low side when you look at the school's profile. The top U.S. colleges and top universities shouldalways be considered reach schools.
+
+								“Safety School”: A college or university where you clearly meet the admission requirements: minimum GPA, test scores, etc. It’s important, though, that the school also be one that you would want to attend, should you not gain admission to more selective colleges.
+							</p>
+					<h2><a name="mission">College Cost Vocabulary</a></h2>
+						<h3>Award Letter</h3>
+							<p>
+								A two hour and 55 minute examination that measures a student’s knowledge and achievement in four subject areas—English, mathematics, reading and science reasoning— to determine the student’s readiness for college-level instruction. There is also an optional writing test that assesses students’ skills in writing an essay. The ACT is scored on a scale of 1 to 36 for each of the four areas.The four subject area scores are averaged to create a Composite Score.
+							</p>
+						<h3>Advanced Placement (AP)</h3>
+							<p>
+								AP courses are college-level classes taught in the high school.
+							</p>
+						<h3>ISFAA</h3>
+							<p>
+								The International Student Financial Aid Application is designed to gather information from international students who are applying for financial aid at colleges and universities in the United States.  This is probably what you will be using for your application attached with other financial information that the university may ask for such as Tax Forms and Certification of Finances Form etc.
+							</p>
+						<h3>CSS Profile</h3>
+							<p>
+								this is the College Scholarship Service Profile, an application distributed by the College Board in the United States allowing college students to apply for financial aid.  Each CSS Profile costs a fee, varying from year to year. Please confirm with the institution whether this is required of you.
+							</p>
+						<h3>FAFSA</h3>
+							<p>
+								This is the Free Application for Federal Student Aid, a federal form required from all American students who wishto apply for need‐based financial aid, including grants, loans and work-study awards. This does not concern International applicants.
+							</p>
+						<h3>Paying for College/ Financial Aid</h3>
+							<ul>
+								<li><h4>Loans</h4>
+									<p>
+										A loan is a type of financial aid that is available to students and to the parents of students. An education loan must be repaid. In many cases, however, payments do not begin until the student finishes school.
+									</p>
+								</li>
+								<li><h4>Grants</h4>
+									<p>
+										Grants, like loans and most scholarships, are based on financial need. A grant may be provided by federal or state governments, an institution, a foundation, or some other nonprofit funding source and does not have to be repaid.
+									</p>
+								</li>
+								<li><h4>Scholarships</h4>
+									<p>
+										A scholarship is a sum of money given to a student for the purposes of paying at least part of the cost of college. Scholarships can be awarded to students based on students' academic achievements or on many other factors. Scholarships do not need to be repaid.
+									</p>
+								</li>
+								<li><h4>Work Study Programs</h4>
+									<p>
+										Most colleges offer work-study programs. They allow students to work part time during the school year as part of their financial aid package. The jobs are usually on campus and the money earned is used to pay for tuition or other college charges.
+									</p>
+								</li>
+							</ul>
+					<h2><a name="mission">Some Campus Terms</a></h2>
+						<h3>Major</h3>
+							<p>
+								A student's concentrated field of study. Every major includes a required set of courses. Colleges typically ask students to pick their major at the end of their sophomore year.
+							</p>
+						<h3>Minor</h3>
+							<p>
+								A student's secondary field of study.
+							</p>
+						<h3>GPA (Grade Point Average)</h3>
+							<p>
+								The GPA is figured by averaging the numerical value of a student's grades: A=4, B=3, C=2, D=1, F=0.It is cumulative, starting freshman year; grades count every year.
+							</p>
+						<h3>Placement Tests</h3>
+							<p>
+								Colleges and universities use these examinations to place students in courses—most often mathematics and foreign languages—that match their proficiency. In some cases, a student’s level of competency on the test may exempt them from having to take a course required for graduation.
+							</p>
+						<h3>Prerequisite</h3>
+							<p>
+								A course that must be taken prior to enrollment in another course.
+							</p>
+				</div>
+		</div>
+
+		<!--Footer
+		==========================-->
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="span6" style="color: #777">Copyright &copy 2016 MentorAbroad | All Rights Reserved  <br></div>
+					<div class="span6">
+					  <div class="social pull-right">
+					    <small> coming soon </small>
+					    <a href="#"><img src="assets/img/social/facebook.png" alt=""></a>
+					    <a href="#"><img src="assets/img/social/twitter.png" alt=""></a>
+					    <a href="#"><img src="assets/img/social/youtube.png" alt=""></a>
+					  </div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!--/.Footer-->
+	</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title> Welcome to MentorAbroad </title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<!-- Bootstrap -->
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/bootstrap-responsive.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+
+		<!--Font-->
+		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600' rel='stylesheet' type='text/css'>
+		<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+		<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+		<!-- Fav and touch icons -->
+		<link rel="shortcut icon" href="img/favicon.png">
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+		<link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+
+		<!-- SCRIPT
+		============================================================-->
+		<script src="http://code.jquery.com/jquery.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<!--google analytics tracking code-->
+		<script>
+  		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-73157121-2', 'auto');
+		ga('send', 'pageview');
+		</script>
+		<!--end of google analytics-->
+		<!--HEADER ROW-->
+		<div id="header-row">
+			<div class="container">
+				<div class="row">
+					<!--LOGO-->
+					<div class="span3 logo"><a class="brand" href="#"><img src="assets/img/logo.png"/></a></div>
+					<!-- /LOGO -->
+					<!-- MAIN NAVIGATION -->
+					<div class="span9">
+						<div class="navbar  pull-right">
+							<div class="navbar-inner">
+								<a data-target=".navbar-responsive-collapse" data-toggle="collapse" class="btn btn-navbar"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a>
+								<div class="nav-collapse collapse navbar-responsive-collapse">
+									<ul class="nav">
+										<li><a href="index.html">Home</a></li>
+										<li><a href="about.html">About</a></li>
+										<li><a href="mentors.html">Mentors</a></li>
+										<li><a href="become-a-mentor.html">Become a Mentor</a></li>
+										<li class="active"><a href="resources.html">Resources</a></li>
+										<li><a href="recruitment.html">Join</a></li>
+										<li><a href="contact.html">Contact</a></li>
+										<li>
+											<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" style="position: absolute; top: 18%;">
+											<input type="hidden" name="cmd" value="_s-xclick">
+											<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+											">
+											<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+											<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+											</form>
+
+										</li>
+							<!-- 			<button type="button" onclick="location.href='http://www.mentorabroad.com/donate'" style="background: #ff6666" class="btn btn-primary navbar-btn">Donate
+										</button> -->
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- MAIN NAVIGATION -->
+				</div>
+			</div>
+		</div>
+		<!-- /HEADER ROW -->
+		<div class="container">
+			<!--PAGE TITLE-->
+			<div class="row">
+				<div class="span12">
+					<div class="page-header">
+						<h1>
+						Scholarships
+						</h1>
+					</div>
+				</div>
+			</div>
+			<!-- /. PAGE TITLE-->
+			<p>Below is a list of scholarships available to international applicants. Feel free to explore beyond this list to find a scholarship that best meets your needs.</p>
+			<ul>
+				<li><a href="http://mcfscholarsprogram.berkeley.edu/ ">MasterCard</a></li>
+				<li><a href="http://zawadiafrica.org/">Zawadi for Girls</a></li>
+				<li><a href="https://educationusa.state.gov/find-advising-center?region=5#.UHNU9q6BymN">Education USA</a></li>
+				<li><a href="http://australiaawardsindo.or.id">Australia Award Scholarship</a></li>
+				<li><a href="http://www.beasiswalpdp.org/index.html">LPDP Scholarship</a></li>
+				<li><a href="http://www.beasiswa.dikti.go.id/dn/">DIKTI Scholarship a. Dalam Neger</a></li>
+				<li><a href="http://www.turkiyeburslari.gov.tr/index.php/en">Turkey Government Scholarship</a></li>
+				<li><a href="http://www.iccrindia.net/gereralscheme.html">General Cultural Scholarship India </a></li>
+				<li><a href="http://www.aminef.or.id/index.php">USA Government Scholarship></a></li>
+				<li><a href="http://www.nesoindonesia.or.id/beasiswa">Netherland Government Scholarship></a></li>
+				<!--<li><a href=""></a>Korean Government Scholarship</li>-->
+				<li><a href="http://www.vliruos.be/4273.aspx">Belgium Government Scholarship</a></li>
+				<li><a href="http://formation.sciences-po.fr/…/the-emile-boutmy-scholars…">Sciences Po France</a></li>
+				<!--<li><a href="http://www.uu.nl/…/grantsandscholarships/Pages/utrechtexcel…"></a>Utrecht University Netherland</li>-->
+				<li><a href="http://www.pmbs.ac.id/s2/scholarship.php?lang=ENG">Prasetya Mulya Business School Indonesia</a></li>
+				<li><a href="http://www.mofat.gov.bn/index.php/announcement">Brunei Darussalam Government Scholarship</a></li>
+				<li><a href="http://www.id.emb-japan.go.jp/sch.html">Monbugakusho Scholarship Japan</a></li>
+				<!--<li><a href="https://gradschool.paramadina.ac.id//paramadina-medco-fell"></a>Paramadina University Master Fellowship Indonesia</li>-->
+				<li><a href="http://ppm-manajemen.ac.id/beasiswa-penuh-s2-mm-reguler/">PPM School of Management Indonesia</a></li>
+				<!--<li><a href="http://www.utwente.nl/internationa…/scholarshipsandgrants/…/"></a>University of Twente Netherland</li>-->
+				<li><a href="http://www.studyinsweden.se/Scholarships/">Sweden Government Scholarship</a></li>
+				<!--<li><a href="http://www.csc.edu.cn/laihua/scholarshipdetailen.aspx…"></a>Chinese Government Scholarship</li>-->
+				<li><a href="http://www.studyintaiwan.org/taiwan_scholarships.html">Taiwan Government Scholarship</a></li>
+				<li><a href="http://www.chevening.org/indonesia/">United Kingdom Government Scholarship</a></li>
+				<!--<li><a href=""></a>Panasonic Scholarship Japan</li>-->
+				<li><a href="http://ancorafoundation.com">Ancora Foundation Scholarship</a></li>
+				<li><a href="http://www.api-fellowships.org/body/">Asian Public Intellectuals Fellowship Japan</a></li>
+				<li><a href="http://www.seed-net.org/index.php">AUN/SEED-Net Scholarship</a></li>
+				<!--<li><a href=""></a>Art Asia Major Scholarship Korea National University of Arts</li>-->
+				<li><a href="http://www.apu.ac.jp/home/life/index.php?content_id=30">Ritsumeikan Asia Pacific University Japan</a></li>
+				<!--<li><a href=""></a>Seoul National University Korea </li>-->
+				<li><a href="http://www.pendis.kemenag.go.id/beasiswaln/">DIKTIS Overseas Scholarship</a></li>
+				<li><a href="http://hisf.or.jp/english/sch-f/">Honjo International Scholarship Foundation Japan</a></li>
+				<!--<li><a href=""></a>IDB Merit Scholarship Programme for High Technology</li>-->
+				<li><a href="http://www.iasociety.org/fellowship.aspx">International HIV & Drug Use Fellowship USA</a></li>
+				<li><a href="http://www.nitori-shougakuzaidan.com/en/">Nitori International Scholarship Foundation Japan</a></li>
+				<li><a href="http://sgpp.ac.id/pages/financial-conditions">School of Government and Public Policy Indonesia</a></li>
+				<li><a href="http://ciae.asia.edu.tw/AdmissionsScholarship.html">Asia University Taiwan</a></li>
+				<!--<li><a href=""></a>Macquaire University Australia</li>-->
+				<li><a href="australiaawardsindo.or.id">Australia Awards Indonesia Australia Awards Indonesia</a></li>
+			</ul>
+		</div>
+		<!--Footer
+		==========================-->
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="span6" style="color: #777">Copyright &copy 2016 MentorAbroad | All Rights Reserved  <br></div>
+					<div class="span6">
+					  <div class="social pull-right">
+					    <small> coming soon </small>
+					    <a href="#"><img src="assets/img/social/facebook.png" alt=""></a>
+					    <a href="#"><img src="assets/img/social/twitter.png" alt=""></a>
+					    <a href="#"><img src="assets/img/social/youtube.png" alt=""></a>
+					  </div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!--/.Footer-->
+	</body>
+</html>
